@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">  
+    
+      <!-- this is first bean First method value as element-->
+   <!--   <bean class="com.springcore.Student" name="student1">
+    	<property name="id">
+    		<value>3092</value>
+    	</property>    	
+    	<property name="name">
+    		<value>Rahul</value>
+    	</property>
+    	
+    	<property name="address">
+    		<value>
+    			pune
+    		</value>
+    	</property>
+    
+    </bean> -->
+     
+    
+    <!-- first bean value as attribute -->
+    <!--  <bean class="com.springcore.Student" name="student1">
+    	<property name="id" value="11"/>
+    		
+    	<property name="name" value="Harsh"/>
+    		
+    	
+    	<property name="address" value="Latur"/>
+    		
+    </bean> -->
+    
+     <!-- second bean value as attribute -->
+    <!-- <bean class="com.springcore.Student" name="student2">
+    	<property name="id" value="21"/>
+    		
+    	<property name="name" value="Rahul"/>
+    		
+    	
+    	<property name="address" value="Beed"/>
+    		
+    </bean> -->
+    
+    <!-- setter injection using p schema -->
+    
+    <bean class="com.springcore.Student" name="student1" p:id="1" p:name="sagar" p:address="Omerga"/>
+    
+     <bean class="com.springcore.Student" name="student2" p:id="2" p:name="swapnil" p:address="Pune"/>
+    
+    
+    
+
+</beans>

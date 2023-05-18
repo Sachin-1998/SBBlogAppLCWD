@@ -1,0 +1,11 @@
+#secure socket layer
+#jks is file extension which contains certificate details
+
+server:
+  ssl:
+    key-alias: samplekey
+    key-store: classpath:javacoder.jks
+    key-store-type: JKS
+    key-store-password: Password
+    enabled: true
+#  port: 7777
